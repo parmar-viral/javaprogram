@@ -18,7 +18,7 @@ public class calc {
         // Input second number
         System.out.print("Enter second number: ");
         num2 = scanner.nextDouble();
-
+        scanner.close();
         // Perform calculation based on operator
         switch (operator) {
             case '+':
