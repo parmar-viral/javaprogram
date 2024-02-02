@@ -26,6 +26,7 @@ public class mul_thread {
         b b1=new b();
         c c1=new c();
         a1.start();
+        Thread.yield();
         b1.start();
         c1.start();
     }
