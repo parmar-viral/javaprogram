@@ -30,6 +30,7 @@ class methodoverloading_ex{
 		n2=sc1.nextInt();
 		System.out.print("enter n3=");
 		n3=sc1.nextInt();
+		sc1.close();
 		methodoverloading_ex c1=new methodoverloading_ex();
 		c1.max(n2,n3);
 		c1.max(n1,n2,n3);	

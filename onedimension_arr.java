@@ -22,6 +22,7 @@ class onedimension_arr{
 			
 			System.out.println("a["+i+"]="+a[i]);
 			
-		}		
+		}	
+		sc1.close();	
 	}	
 }

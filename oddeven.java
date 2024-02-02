@@ -16,6 +16,7 @@ public class oddeven{
 			System.out.println("Given number is odd............");
 			
 		}
+		scanobj.close();
 		/*
 		if(no%2==0)
 		{

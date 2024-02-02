@@ -20,5 +20,6 @@ class twodimension_arr{
 			}
 			System.out.println();
 		}
+		sc1.close();
 	}	
 }

@@ -50,6 +50,7 @@ class first
 		a=s.nextInt();
 		System.out.print("enter the value of b=");
 		b=s.nextInt();
+		s.close();
 			
 	}
 	first(int x, int y)
@@ -62,21 +63,21 @@ class first
 }	
 class second extends first
 {
-	int a ,b;
+	int a1 ,b1;
 	second()
 	{
-		Scanner s=new Scanner(System.in);
-		System.out.print("enter the value of a=");
-		a=s.nextInt();
-		System.out.print("enter the value of b=");
-		b=s.nextInt();
-			
+		super();
+		Scanner s1=new Scanner(System.in);
+		System.out.print("enter the value of a1=");
+		a1=s1.nextInt();
+		System.out.print("enter the value of b1=");
+		b1=s1.nextInt();
+		s1.close();	
 	}
-	second(second s)
-	{
-		System.out.println("the value of a="+x);
-		System.out.println("the value of b="+y);
-	}		
+	public void op(){
+		System.out.println("sum="+(a+b+a1+b1));
+	}
+			
 }
 
 class in_1{
@@ -85,7 +86,6 @@ public static void main(String[] args)
 {
 	
 second se=new second();
-second se1=new second(12,13);
-
+se.op();
 }
 }
