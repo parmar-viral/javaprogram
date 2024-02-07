@@ -1,11 +1,11 @@
-class a extends Thread{
+class A extends Thread{
     synchronized public void run(){
          for(int i=1;i<=10;i++){
              System.out.println("thread a="+i+" is running");
          }
      }
  }
- class b extends Thread{
+ class B extends Thread{
     synchronized public void run(){
          for(int i=1;i<=10;i++){
              System.out.println("thread b="+i+" is running");
@@ -15,8 +15,8 @@ class a extends Thread{
  public class mul_threading_method {
    
     public static void main(String[] args) throws InterruptedException{
-         a a1=new a();
-         b b1=new b();
+         A a1=new A();
+         B b1=new B();
          a1.start();  
          Thread.sleep(5000);        
          Thread.yield(); //
