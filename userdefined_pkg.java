@@ -1,4 +1,5 @@
-
+import mypack.*;
+import mypack.pack.*;
 public class userdefined_pkg {
     public static void main(String[] args) {
         a a1=new a();
