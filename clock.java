@@ -3,17 +3,19 @@ import java.util.GregorianCalendar;
 
 class THRD extends Thread{
     public void run(){
-        while (true) {
-            SimpleDateFormat sd=new SimpleDateFormat("dd/MM/YYYY  HH:mm:ss");
-            GregorianCalendar g=new GregorianCalendar();
-            System.out.println(sd.format(g.getTime()));
+        try {
+            while (true) {
+                GregorianCalendar g=new GregorianCalendar();
+                SimpleDateFormat sd=new SimpleDateFormat("dd/MM/YYYY  HH:mm:ss");  
 
-            try {
+                System.out.print("\r"+"Current Date And Time="+ sd.format(g.getTime()));         
                 Thread.sleep(1000);
-            } catch (Exception e) {
-                System.out.println("Exception:"+e);
+
             }
-        }
+            
+        } catch (Exception e) {
+            System.out.println("Exception:"+e);
+        }       
     }
 }
 class clock{
