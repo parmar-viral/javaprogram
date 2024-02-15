@@ -23,8 +23,14 @@ public class file {
 
         // code for RandomAccessFile .....................
 
-        RandomAccessFile RAF=new RandomAccessFile("f1.txt","rw"); 
-        RAF.writeUTF("RandomAccessFile Example in java");
+        RandomAccessFile RAF=new RandomAccessFile("RandomFile.txt","rw"); 
+       // RAF.write("RandomAccessFile Example".getBytes());
+       RAF.write("hello".getBytes());
+       RAF.write("\njava".getBytes());
+       RAF.write("\nlanguage".getBytes());
+
+      // RAF.seek(6);
+      // RAF.write("JAVA".getBytes());
         System.out.println("successfully written into file using RandomAccessFile...."); 
 
         RAF.close();
