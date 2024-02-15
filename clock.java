@@ -9,12 +9,12 @@ class THRD extends Thread{
                 SimpleDateFormat sd=new SimpleDateFormat("dd/MM/YYYY  HH:mm:ss"); 
                  
                 // "\r" is used to reset the cursor at begining of the current line of text
-                System.out.print("\r"+"Current Date And Time="+ sd.format(g.getTime()));         
-                Thread.sleep(1000);
+                System.out.print("\r"+"Current Date And Time="+ sd.format(g.getTime()));    
 
+                Thread.sleep(1000);
             }
-            
-        } catch (Exception e) {
+                        
+        } catch (InterruptedException e) {
             System.out.println("Exception:"+e);
         }       
     }
