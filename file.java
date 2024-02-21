@@ -35,8 +35,8 @@ public class file {
        RAF.write("\njava".getBytes());
        RAF.write("\nlanguage".getBytes());
 
-      // RAF.seek(6);
-      // RAF.write("JAVA".getBytes());
+       RAF.seek(6);
+       RAF.write("JAVA".getBytes());
 
       System.out.println("successfully written into file using RandomAccessFile...."); 
 
