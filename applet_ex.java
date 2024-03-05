@@ -1,12 +1,12 @@
 import java.applet.*;
 import java.awt.*;
 public class applet_ex extends Applet {
-    public void paint(Graphics g, String sarif){
+    public void paint(Graphics g){
       
-        Color c=new Color(100,0,100);
+        Color c=new Color(100,200,200);
         g.setColor(c);
-       // Font f=new Font(sarif, 10, Font.BOLD);
-       // g.setFont(f);
+       Font f=new Font(getName(), Font.ITALIC, 30);
+       g.setFont(f);
         g.drawString("java applete example", 50, 50);
 
     }
